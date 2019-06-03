@@ -24,9 +24,10 @@ Y = tf.placeholder("float")
 W = tf.Variable(np.random.randn(), name = "W") 
 b = tf.Variable(np.random.randn(), name = "b")
 
-learning_rate = tf.Variable(0.01, name= "learning_rate")
-training_epochs = tf.Variable(1000 , name= "training_epochs")
+#learning_rate = tf.Variable(0.01, name= "learning_rate")
+#training_epochs = tf.Variable(1000 , name= "training_epochs")
 
+learning_rate=0.01
 training_epochs=1000
 
 y_pred= tf.multiply(X,W)
